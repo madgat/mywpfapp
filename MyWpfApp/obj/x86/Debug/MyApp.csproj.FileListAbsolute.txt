@@ -1,0 +1,17 @@
+F:\Demo\MyApp\bin\Debug\MyApp.exe
+F:\Demo\MyApp\bin\Debug\MyApp.pdb
+F:\Demo\MyApp\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Demo\MyApp\obj\x86\Debug\View\MainWindow.baml
+F:\Demo\MyApp\obj\x86\Debug\View\MainWindow.g.cs
+F:\Demo\MyApp\obj\x86\Debug\App.g.cs
+F:\Demo\MyApp\obj\x86\Debug\MyApp_MarkupCompile.cache
+F:\Demo\MyApp\obj\x86\Debug\MyApp.g.resources
+F:\Demo\MyApp\obj\x86\Debug\MyApp.Properties.Resources.resources
+F:\Demo\MyApp\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Demo\MyApp\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Demo\MyApp\obj\x86\Debug\MyApp.exe
+F:\Demo\MyApp\obj\x86\Debug\MyApp.pdb
+F:\Demo\MyApp\obj\x86\Debug\MyApp_Content.g.cs
+F:\Demo\MyApp\bin\Debug\EmployeeMaster.xml
+F:\Demo\MyWpfApp\obj\x86\Debug\MyApp.exe
+F:\Demo\MyWpfApp\obj\x86\Debug\MyApp.pdb
