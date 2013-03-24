@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Threading;
+using MyApp.Logging;
 
 namespace MyApp
 {
@@ -21,7 +22,7 @@ namespace MyApp
 
         private void Application_UnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
         {
-            if (!Debugger.IsAttached)
+            if (true)
             {
                 // NOTE: This will allow the application to continue running after an exception has been thrown
                 // but not handled. 
@@ -48,7 +49,9 @@ namespace MyApp
 
         private void ShowErrorMessage(string message)
         {
-            MessageBox.Show(message);
+            var logger = new ErrorLog();
+            logger.SaveLog(message);
+            MessageBox.Show("Some Exception occurs in the system.");
         }
 
         private static string GetExceptionTrace(Exception e)
