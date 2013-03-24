@@ -71,6 +71,7 @@
     <Compile Include="BLL\Employee.cs" />
     <Compile Include="Data\DbHelper.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Utils\RelayCommand.cs" />
     <Compile Include="Utils\EmployeeMappingsFormat.cs" />
     <Compile Include="Utils\XmlFormatBase.cs" />
     <Compile Include="Utils\Interfaces\IFormat.cs" />

@@ -2,6 +2,8 @@
 using MyApp.Data;
 using MyApp.Utils;
 using MyApp.ViewModel;
+using System.Linq;
+
 
 namespace MyApp.BLL
 {
@@ -17,6 +19,26 @@ namespace MyApp.BLL
             var data = formatter.Read(xml);
 
             return data;
+        }
+
+        public EmployeViewModel Find(int id)
+        {
+            var employeeData = GetData();
+            var data = employeeData.FirstOrDefault(x => x.Id == id);
+
+            return data;
+        }
+
+
+        public bool Save(EmployeViewModel viewModel)
+        {
+            var collection = GetData();
+
+            collection.Add(viewModel);
+            var formatter = new EmployeeMappingsFormat();
+            formatter.Write(collection);
+
+            return true;
         }
     }
 }

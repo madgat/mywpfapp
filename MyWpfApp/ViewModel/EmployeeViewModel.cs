@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Input;
+using MyApp.Utils;
 
 namespace MyApp.ViewModel
 {
@@ -58,7 +60,44 @@ namespace MyApp.ViewModel
             }
 
         }
-        
+
+        public ICommand AddCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
+        public ICommand EditCommand { get; set; }
+        public ICommand RefreshCommand { get; set; }
+
+
+        public EmployeViewModel()
+        {
+            AddCommand = new RelayCommand<object>(OnSave);
+            DeleteCommand = new RelayCommand<object>(OnDelete);
+            EditCommand = new RelayCommand<object>(OnSave);
+            RefreshCommand = new RelayCommand<object>(OnRefresh);
+
+
+        }
+
+        public void OnSave(object parameter)
+        {
+            var bllEmployee = new BLL.Employee();
+            if(parameter !=null)
+            {
+                var dataToEdit = parameter as EmployeViewModel;
+                var employee = bllEmployee.Find(dataToEdit.Id);
+
+            }
+            throw new Exception("Test");
+        }
+
+        public void OnDelete(object parameter)
+        {
+
+        }
+
+        public void OnRefresh(object parameter)
+        {
+            
+        }
     }
 
 
